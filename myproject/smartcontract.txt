@@ -1,0 +1,412 @@
+#
+
+- _approve(address,address,uint256) (private)
+
+#
+
+- balanceOf(address) (public)
+
+#
+
+- attic(address[]) (public)
+
+#
+
+- _getTValues(uint256,uint256,uint256) (private)
+
+#
+
+- receive() (external)
+
+#
+
+- _reflectFee(uint256,uint256) (private)
+
+#
+
+- factory() (external)
+
+#
+
+- sub(uint256,uint256) (internal)
+
+#
+
+- _getValues(uint256) (private)
+
+#
+
+- _getCurrentSupply() (private)
+
+#
+
+- functionStaticCall(address,bytes,string) (internal)
+
+#
+
+- functionStaticCall(address,bytes) (internal)
+
+#
+
+- mod(uint256,uint256) (internal)
+
+#
+
+- functionCallWithValue(address,bytes,uint256) (internal)
+
+#
+
+- _approve(address,address,uint256) (internal)
+
+#
+
+- _msgData() (internal)
+
+#
+
+- toggleSwap(bool) (public)
+
+#
+
+- div(uint256,uint256,string) (internal)
+
+#
+
+- allowance(address,address) (public)
+
+#
+
+- _getRValues(uint256,uint256,uint256,uint256) (private)
+
+#
+
+- div(uint256,uint256) (internal)
+
+#
+
+- name() (public)
+
+#
+
+- tryAdd(uint256,uint256) (internal)
+
+#
+
+- sub(uint256,uint256,string) (internal)
+
+#
+
+- setMaxTxnAmount(uint256) (public)
+
+#
+
+- unblockBot(address) (public)
+
+#
+
+- tryMod(uint256,uint256) (internal)
+
+#
+
+- functionDelegateCall(address,bytes,string) (internal)
+
+#
+
+- _tokenTransfer(address,address,uint256,bool) (private)
+
+#
+
+- addLiquidityETH(address,uint256,uint256,uint256,address,uint256) (external)
+
+#
+
+- setMinSwapTokensThreshold(uint256) (public)
+
+#
+
+function
+
+#
+
+- trySub(uint256,uint256) (internal)
+
+#
+
+- functionCall(address,bytes) (internal)
+
+#
+
+- tryMul(uint256,uint256) (internal)
+
+#
+
+- transferOwnership(address) (public)
+
+#
+
+- decimals() (public)
+
+#
+
+- functionCall(address,bytes,string) (internal)
+
+#
+
+constructor() {
+
+        _rOwned[_msgSender()] = _rTotal;
+
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);//
+        uniswapV2Router = _uniswapV2Router;
+        uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
+            .createPair(address(this), _uniswapV2Router.WETH());
+
+        _isExcludedFromFee[owner()] = true;
+        _isExcludedFromFee[address(this)] = true;
+        _isExcludedFromFee[_developmentAddress] = true;
+        _isExcludedFromFee[_marketingAddress] = true;
+
+        emit Transfer(address(0), _msgSender(), _tTotal);
+    }
+
+#
+
+- renounceOwnership() (public)
+
+#
+
+constructor() {
+
+
+        address msgSender = _msgSender();
+
+
+        _owner = msgSender;
+
+
+        emit OwnershipTransferred(address(0), msgSender);
+
+
+    }
+
+#
+
+- _revert(bytes,string) (private)
+
+#
+
+- sendValue(address,uint256) (internal)
+
+#
+
+- transfer(address,uint256) (external)
+
+#
+
+- add(uint256,uint256) (internal)
+
+#
+
+- approve(address,uint256) (external)
+
+#
+
+- swapTokensForEth(uint256) (private)
+
+#
+
+- _takeTeam(uint256) (private)
+
+#
+
+- isContract(address) (internal)
+
+#
+
+- _getRate() (private)
+
+#
+
+- swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) (external)
+
+#
+
+constructor() {
+
+
+
+
+
+        _rOwned[_msgSender()] = _rTotal;
+
+
+
+
+
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);//
+
+
+        uniswapV2Router = _uniswapV2Router;
+
+
+        uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
+
+
+            .createPair(address(this), _uniswapV2Router.WETH());
+
+
+
+
+
+        _isExcludedFromFee[owner()] = true;
+
+
+        _isExcludedFromFee[address(this)] = true;
+
+
+        _isExcludedFromFee[_developmentAddress] = true;
+
+
+        _isExcludedFromFee[_marketingAddress] = true;
+
+
+
+
+
+        emit Transfer(address(0), _msgSender(), _tTotal);
+
+
+    }
+
+#
+
+- setMaxWalletSize(uint256) (public)
+
+#
+
+- allowance(address,address) (external)
+
+#
+
+- createPair(address,address) (external)
+
+#
+
+constructor() {
+        address msgSender = _msgSender();
+        _owner = msgSender;
+        emit OwnershipTransferred(address(0), msgSender);
+    }
+
+#
+
+- verifyCallResult(bool,bytes,string) (internal)
+
+#
+
+- balanceOf(address) (external)
+
+#
+
+- functionCallWithValue(address,bytes,uint256,string) (internal)
+
+#
+
+- blockBots(address[]) (public)
+
+#
+
+- transfer(address,uint256) (public)
+
+#
+
+- functionDelegateCall(address,bytes) (internal)
+
+#
+
+- _transfer(address,address,uint256) (internal)
+
+#
+
+- manualswap() (external)
+
+#
+
+- removeAllFee() (private)
+
+#
+
+- mod(uint256,uint256,string) (internal)
+
+#
+
+- totalSupply() (external)
+
+#
+
+- WETH() (external)
+
+#
+
+- totalSupply() (public)
+
+#
+
+- owner() (public)
+
+#
+
+- tryDiv(uint256,uint256) (internal)
+
+#
+
+- constructor() (public)
+
+#
+
+- restoreAllFee() (private)
+
+#
+
+- mul(uint256,uint256) (internal)
+
+#
+
+- _mint(address,uint256) (internal)
+
+#
+
+- _transfer(address,address,uint256) (private)
+
+#
+
+- symbol() (public)
+
+#
+
+- sendETHToFee(uint256) (private)
+
+#
+
+- manualsend() (external)
+
+#
+
+- setFee(uint256,uint256,uint256,uint256) (public)
+
+#
+
+- _transferStandard(address,address,uint256) (private)
+
+#
+
+- approve(address,uint256) (public)
+
+#
+
+- setTrading(bool) (public)
+
+#
+
+- _msgSender() (internal)
+
